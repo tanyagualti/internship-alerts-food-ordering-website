@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/chalkboard" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />               
+<link rel="stylesheet" href="../CSS/help.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="form.js"></script>
+</head>
+<body>
+  <div class="nav-bar ">
+    <div class="logo"></div>
+   <div class="nav"> <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#ordernow">Order Now</a></li>
+    <li><a href="#contactus">Contact Us</a></li>
+    <li><a href="sign-in.html">login</a></li>
+   <li><a id="sign"class="signup"href="#" onclick="model()">Sign up</a></li>
+ 
+
+</ul>
+
+</div>
+</div>
+  <!-- nav bar -->
+
+    <div class="container4">
+      <div class="log" > <h1>Eating Empire :First, we eat. Then, we do everything else <span style="text-align:center; font-family: 'chalkboard', sans-serif; color:orangered;margin:3vw;text-shadow: 5px 5px 5px white;">50% off</span></h1><button>Place order</button></div> 
+   <img src="banner4.jpg" alt="">
+
+    
+    </div>
+
+<!-- form -->
+<div class="overley" >
+  <div class="form">
+  
+   <form action="/myaction.php" method="post" onsubmit="return validateForm()" name="myform" >
+       <div class="triangle triangle-0"></div>
+       <div class="cross" onclick="cross()">&times;</div>
+      <div id="name"> <input type="text" placeholder="Username" name="uname" required><p class="formerror"></p></div>
+
+
+
+<div id="email"> <input type="Email" placeholder="Email" name="email"required><p class="formerror" ></p></div>
+
+<div id="password"> <input type="password" placeholder="Password" name="password"required><p class="formerror" ></p></div>
+<div id="confirm"> <input type="password" placeholder="Confirm Password" name="confirm" required><p class="formerror"></p></div>
+<Button class="btn1" type="submit" value="submit">Create Account</Button>
+
+<p class="already">Already have an account?<a href="sign-in.html">Sign-in</a><p>
+</form>
+  </div>
+
+</div>
+<span onclick="display()"class="material-symbols-outlined" id="menu">
+menu
+</span>
+
+
+<!-- first section -->
+    <div id="about" class="box1">
+    <div class="image"><img src="burger.png" alt=""></div>
+    <div class="about"><h1 class="ab1">About Eating Empire</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus quis fugiat voluptates, placeat a. Illo omnis et voluptates at cupiditate, nobis quia sapiente, est enim, animi quisquam laudantium nostrum.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint corporis repellat cum omnis corrupti ea accusamus ipsum, illum vitae praesentium adipisci nam. Corrupti quibusdam nesciunt eaque rerum qui consequatur.</p>
+    <button class="dishes-button">More dishes</button>
+    </div>
+    </div>
+
+
+<!-- dishes -->
+    <!-- second section -->
+    <div id="gallery"class="gallery"><h1 style="text-align: center;color:orangered;font-size:50px;text-shadow:10px 10px 10px black;margin:30px 0px;">Gallery</h1></div>
+    <div class="b1">
+    
+        
+       <div class="pic pic1"><img src="pic1.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+
+ 
+       <div class="pic pic2"><img src="pic2.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+       <div class="pic pic3"><img src="pic3.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+      
+       
+    </div>
+    <div class="b2">
+    <div class="pic pic4"><img src="pic4.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div class="pic pic5"><img src="pic5.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+    <div class="pic pic6"><img src="pic6.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+        favorite
+        </span></div>
+</div>
+
+<div class="b1">
+    
+        
+  <div class="pic pic1"><img src="pic1.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+
+
+  <div class="pic pic2"><img src="pic2.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+  <div class="pic pic3"><img src="pic3.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+ 
+  
+</div>
+<div class="b2">
+<div class="pic pic4"><img src="pic4.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+<div class="pic pic5"><img src="pic5.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+<div class="pic pic6"><img src="pic6.jpg" alt=""><button>Add</button><span class="material-symbols-outlined">
+   favorite
+   </span></div>
+</div>
+
+
+<!--second section-->
+<div class="section2">
+    <div class="image"><img src="free.jpg" alt=""></div>
+</div>
+
+<!-- customer reveiw -->
+<div class="heading5">
+    <h6>What our customers are saying</h6>
+    <p>Our customers trust Edugate for unique e-learning experience, reliability, and growth.</p>
+  </div>
+  
+  <div class="big-box">
+  
+  <div class="same first">
+   <img src="girl1.jpg" alt="girl1">
+   <h6>Khushi Chaudhary</h6>
+    <p>My interest in programming peaked when I joined the course and now I believe this is the career I want to take.</p>
+  
+  </div>
+  <div class="same second">
+    <img src="girl2.jpg" alt="girl2">
+  <h6>Tanya Gulati</h6>
+  <p>Easy to use, small learning curve, complete lectures. Thanks for such great education plugin!</p>
+  </div>
+  <div class="same third">
+    <img src="girl3.jpg" alt="girl3">
+    <h6>Parul Jain</h6>
+    <p>I have not experience of working with ML but now I can easily work in an efficient manner.Thanks a lot!</p>
+  </div>
+  <div class="same forth">
+    <img src="girl4.jpg" alt="girl4">
+  <h6>Himanshi Arya</h6>
+  <p>ust finished "Artificial Intelligence" on Edugate. It was really well explained and learned new things.</p>
+  </div>
+  
+  
+  
+  </div>
+  
+  
+  </div>
+<!-- third section -->
+<div class="section3">
+    <div class="image"><img src="place order.png" alt=""></div>
+</div>
+
+<!--order now -->
+<div id="ordernow" class="heading6"><h6>Order Now</h6></div>
+
+<div id="contact"class="big-container">
+
+<div class="lside">
+<img src="place.avif" alt="">
+
+
+</div>
+<div class="rside">
+
+  <form action="">
+<div class="div"><input type="text" placeholder="Username"></div>
+<div class="div"><input type="email" placeholder="Email"></div>
+<div class="div"><input type="text" placeholder="Food Item"></div>
+<div class="div"><input type="text" placeholder="Address"></div>
+<div><button class="submit-button">Submit</button></div>
+
+  </form>
+</div>
+
+
+</div>
+  <!-- faq -->
+  
+  
+  <div class="help">
+
+    <h3>How Can We Help you?</h3>  
+    <span>Got a question?   Get your answer</span>
+
+
+</div>
+
+
+<!-- ques -->
+<div class="ques">
+<h1>FAQ</h1>
+    </div>
+
+    <!-- card -->
+
+  
+     <!-- card 1 -->
+     <!-- understanding the issue -->
+           <div class="container">
+
+          
+                    <div class="card">
+          
+                    <div class="card-header">Understanding The Issue</div>
+                        <ul class="list-group list-group-flush">
+
+                            <!-- ques 1 -->
+                          <li class="list-group-item">
+
+
+                            <div style="gap:30px;" class="dropdown">
+                                <button id="button1"class="btn btn-primary dropdown-toggle" type="button"  aria-expanded="false">
+                  Which type of food you placed and how and which payment method ypu use?
+                                </button>
+                               
+                                <input class="form-control" type="text" placeholder="type here....." readonly> 
+                              
+                                </div>
+                              </li>
+
+
+                                <!-- ques2 -->
+                             <li class="list-group-item">
+                           
+                           
+                            <div class="dropdown">
+                                <button  id="button2" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           I have placed my order,when will i get my delivery?
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Set-up new printer</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">Can't connect</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">printer won't print</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">printer offline</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">printer print black paper</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">paper jam</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">Error code Error message</a></li><hr>
+                                  <li><a class="dropdown-item" href="#">scanner issue</a></li>
+                                </ul>
+                              </div>
+                             </li>
+
+                             <!-- ques3 -->
+                             <li class="list-group-item"> 
+                              <div class="dropdown">
+                            <button  id="button3" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Whats your return policy?
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">window computer</a></li>
+                              <li><a class="dropdown-item" href="#">Mac computer</a></li>
+                              <li><a class="dropdown-item" href="#">Chrome book</a></li>
+                              <li><a class="dropdown-item" href="#">Android phone</a></li>
+                              <li><a class="dropdown-item" href="#">iPhone/iPad</a></li>
+                              <li><a class="dropdown-item" href="#">paper jam</a></li>
+                             
+                            </ul>
+                          </div></li>
+                        </ul>
+                        </div>
+                                        
+                     </div>
+           
+           
+            <!-- second card -->
+            <div class="container container2">
+            <div class="card">
+                <div class="card-header">
+                How much shipping cost?
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                      <p style="font-size: 16px;font-family: AmazonEmberLight,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;">You placed the order Successfully?</p>
+                      <button type="button" class="btn btn-outline-dark">Yes</button>
+                      <button type="button" class="btn btn-outline-dark">No</button>
+                  </li>
+                  <li class="list-group-item">
+                    <p style="font-size: 16px;font-family: AmazonEmberLight,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;">Your internet connection is fast or in working condition?</p>
+                    <button type="button" class="btn btn-outline-dark">Yes</button>
+                    <button type="button" class="btn btn-outline-dark">No</button>
+
+
+                  </li>
+                 
+                </ul>
+              </div>
+                     
+</div>
+
+
+<div class="container">
+
+<div class="card">
+    <div class="card-header" style="text-transform: capitalize;">
+      Please provide the below mentioned details so we can send you the instructions to troubleshoot and resolve the issue.
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <input type="text" placeholder="enter your name"> <input type="number" placeholder="phone no."> </li>
+      <li class="list-group-item"><div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div></li>
+      <li id="last-para" class="list-group-item"><p>to get immediate resolutions,feel free to call our certified experts on 1-977-xxxx-xxxx,for over the phone assistance and get instant resolution!</p>
+    <p>to do basic troubleshooting on your own.</p>
+    <button style="width: 100px;font-size:20px;position: relative;left:35vw;" type="button" class="btn btn-primary">Hit Next</button>
+    </li>
+   
+    </ul>
+    
+  </div>
+</div>
+<footer>
+    <div class="footer">
+    
+    
+    <div class="same first">
+      <h3>Food category</h3>
+      <div class="inner inner-first">
+        <p>Pizza</p>
+        <p>Burger</p>
+        <p>Noodles</p>
+        <p>Beverages</p>
+      </div>
+    </div>
+    
+    
+      <div class="same second">
+      <h3>Services</h3>
+      <div class=" inner inner-second">
+        <p>Delicious taste</p>
+        <p>Pre-order Food</p>
+        <p>Food Delivery</p>
+        
+      </div>
+    </div>
+    
+    
+    <div class=" same third">
+      <h3>Information</h3>
+      <div class="inner inner-third">
+        <p>About Us</p>
+        <p>Contact Us</p>
+       
+      </div>
+    </div>
+    
+    <div class="same forth">
+      <h3>Newsletter</h3>
+      <div class="inner inner-forth">
+        <p>You Can Trust us</p>
+        <div class="subs"><input type="text" placeholder="your email">
+          <button class="subscribe-button">Subscribe</button></div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="final" style="display: flex;gap:20px;">
+    <div class="last">Copyright &#169; 2023 All rights reserved | This template is made by Tanya Gulati
+    
+    </div>
+    
+    
+    <div class="style" style="display:flex;gap:20px;">
+    
+    
+     
+    
+    
+    <div class="third"style="gap:10px;display:flex;"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg><a class="a"style="color: white;"href="https://github.com/tanyagualti/small-task"></a>
+    </div>
+    
+    
+      <div class="forth"style="display:flex;gap:10px;"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg><a class="a" style="color: white;"href="https://www.linkedin.com/in/tanya-gulati-9b2341230"></a></div>
+    </div>
+    </div>
+    </div>
+    
+    
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      function model(){
+      document.querySelector('.form').classList.add('showform');
+      document.querySelector('.overley').classList.add('showoverley');
+      }
+
+      function cross(){
+          document.querySelector('.form').classList.remove('showform');
+          document.querySelector('.overley').classList.remove('showoverley');
+      }
+      function display(){
+          document.querySelector('.nav-bar').classList.toggle('show-nav-bar');
+      }
+  </script>
+</body>
+</html>
